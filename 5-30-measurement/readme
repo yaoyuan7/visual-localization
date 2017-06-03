@@ -1,0 +1,12 @@
+
+Readme
+
+================================================================================================================
+
+All ten folders contain three images taken from three webcams.
+
+All ten folders contain one json file except for the first folder.
+
+The json file contain all the information capturing by the webcam, 
+however, the only useful information are "tagid" and its corresponding "image_name".
+Values of "ground_truth" and "camera_location" are wrong, please do not refer these two as validate data.
