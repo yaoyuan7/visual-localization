@@ -18,7 +18,7 @@ class camera:
 	def rundemo(width,height,img):
 		#retrieve location information about apriltags from image
 		#example: distance=1.19128m, x=0.442468, y=-0.980352, z=-0.512135, yaw=-0.0253801, pitch=-0.000894956, roll=1.98666e-05, cxy=(1649.37, 934.47)
-		raw_result = subprocess.Popen(['./build/bin/apriltags_demo', '-W', str(width), '-H', str(height),img],stdout=subprocess.PIPE,stderr=subprocess.PIPE,stdin=subprocess.PIPE)
+		raw_result = subprocess.Popen(['./apriltags/build/bin/apriltags_demo', '-W', str(width), '-H', str(height),img],stdout=subprocess.PIPE,stderr=subprocess.PIPE,stdin=subprocess.PIPE)
 		result = raw_result.communicate()[0]
 
 		info = result.decode()
